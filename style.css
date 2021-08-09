@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fffffc;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.container {
+  background: #bdb2ff;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 60px;
+}
+
+.info {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: space-around;
+  color: #6147f5;
+}
+
+.info-reinicia,
+.info-turno {
+  background: #ffc6ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info span {
+  color: #659efb;
+}
+
+.info-reinicia {
+  cursor: pointer;
+}
+
+.info-reinicia:hover {
+  color: black;
+}
+
+.jogo {
+  background-color: #a090fc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.jogo-quadrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background: #ffc6ff;
+}
+
+.jogo-quadrado:not(.X, .O):hover {
+  background-color: #f8a2f8;
+  cursor: pointer;
+}
+
+.X::after {
+  color: #fbbc6f;
+  content: "✘";
+  font-size: 200px;
+}
+
+.O::after {
+  color: #659efb;
+  content: "o";
+  font-size: 230px;
+  margin-bottom: 30px;
+}
+
+.vencedor:after,
+.velha:after {
+  color: #6147f5;
+  font-size: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .jogo {
+    margin-top: 25;
+    grid-gap: 10px;
+  }
+  .jogo-quadrado {
+    height: 150px;
+    width: 150px;
+  }
+  .X::after {
+    font-size: 150px;
+  }
+  .O::after {
+    font-size: 150px;
+  }
+}
