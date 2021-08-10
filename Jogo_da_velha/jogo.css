@@ -9,8 +9,8 @@
   min-height: 100%;
   background-size: cover;
   pointer-events: none;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .wrap {
@@ -33,10 +33,9 @@
   color: transparent;
 }
 .container {
-  position: flex;
   background: #ef476f;
-  margin: 50px;
-  padding: 50px;
+  margin: 2%;
+  padding: 2%;
   border-radius: 30px;
   box-shadow: 0 0 0 4pt #ce1d46;
 }
@@ -64,7 +63,7 @@
 }
 
 .info-turno {
-  position: relative;
+  position: flex;
   font-size: 29px;
 }
 
@@ -129,12 +128,5 @@
   .jogo {
     margin-top: 25;
     grid-gap: 10px;
-  }
-
-  .X::after {
-    font-size: 150px;
-  }
-  .O::after {
-    font-size: 150px;
   }
 }
