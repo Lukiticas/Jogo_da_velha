@@ -33,6 +33,7 @@
   color: transparent;
 }
 .container {
+  position: flex;
   background: #ef476f;
   margin: 50px;
   padding: 50px;
@@ -121,45 +122,19 @@
 
 .vencedor:after,
 .velha:after {
-  background-image: linear-gradient(90deg, #007200, #118ab2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: aqua;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   .jogo {
     margin-top: 25;
     grid-gap: 10px;
   }
-  .jogo-quadrado {
-    height: 150px;
-    width: 150px;
-  }
+
   .X::after {
     font-size: 150px;
   }
   .O::after {
     font-size: 150px;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .container {
-    margin: 25px;
-    padding: 25px;
-  }
-
-  .jogo-quadrado {
-    height: 100px;
-    width: 100px;
-  }
-
-  .X::after {
-    font-size: 100px;
-  }
-
-  .O::after {
-    font-size: 125px;
   }
 }
