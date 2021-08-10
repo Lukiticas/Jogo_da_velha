@@ -4,3 +4,4 @@ Me inspirei e aprendi a maioria das coisas usadas aqui - principalmente em CSS p
 
 Irei em breve, quando me aprofundar em IA, aplicar um bot que jogará com você. Pq por enquanto o jogo está em "multiplayer local". Além disso, irei emprementando muitas coisas durante meu aprendizado, como menus, usuarios, opções de cor, dificuldade, etc... 
 
+At1. Fora adicionado muitas coisinhas, agradesço ao <a href="https://www.youtube.com/c/OnlineTutorials4Designers">Online Tutorial</a> e ao <a href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw">Kevin Powel</a> pelos ótimos guias e aulas sobre Css e html, incrível!
