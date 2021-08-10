@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+
+.img {
+  z-index: -1;
+  background-image: url(images/img.jpg);
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  pointer-events: none;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.wrap {
+  color: #118ab2;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  justify-content: center;
+}
+
+#title {
+  font-size: 90px;
+  font-family: "Palette Mosaic", cursive;
+  margin-top: 0%;
+  height: 250px;
+  width: 600px;
+  background-image: linear-gradient(90deg, #007200, #118ab2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.container {
+  background: #ef476f;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 0 4pt #ce1d46;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 60px;
+}
+
+.info {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: space-around;
+  color: #118ab2;
+}
+
+.info-reinicia,
+.info-turno {
+  background: #ffd166;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3pt #ce1d46;
+}
+
+.info-turno {
+  position: relative;
+  font-size: 29px;
+}
+
+.info span {
+  background-image: linear-gradient(90deg, #007200, #118ab2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.info-reinicia {
+  cursor: pointer;
+}
+
+.info-reinicia:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #007200, #118ab2);
+}
+
+.jogo {
+  background-color: #ce2b51;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.jogo-quadrado {
+  background: #ffd166;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+}
+
+.jogo-quadrado:not(.X, .O):hover {
+  background-color: #f1b018;
+  cursor: pointer;
+}
+
+.X::after {
+  color: #118ab2;
+  content: "✘";
+  font-size: 200px;
+}
+
+.O::after {
+  color: #007200;
+  content: "o";
+  font-size: 230px;
+  margin-bottom: 30px;
+}
+
+.vencedor:after,
+.velha:after {
+  background-image: linear-gradient(90deg, #007200, #118ab2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+  .jogo {
+    margin-top: 25;
+    grid-gap: 10px;
+  }
+  .jogo-quadrado {
+    height: 150px;
+    width: 150px;
+  }
+  .X::after {
+    font-size: 150px;
+  }
+  .O::after {
+    font-size: 150px;
+  }
+}
