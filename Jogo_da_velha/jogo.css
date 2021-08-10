@@ -143,3 +143,23 @@
     font-size: 150px;
   }
 }
+
+@media only screen and (max-width: 540px) {
+  .container {
+    margin: 25px;
+    padding: 25px;
+  }
+
+  .jogo-quadrado {
+    height: 100px;
+    width: 100px;
+  }
+
+  .X::after {
+    font-size: 100px;
+  }
+
+  .O::after {
+    font-size: 125px;
+  }
+}
